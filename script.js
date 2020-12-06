@@ -2,132 +2,37 @@ $(document).ready(function () {
 
 
     // Novice Questions//
+    var searchValue = "Javascript";
     $.ajax({
         type: "GET",
         url: "https://opentdb.com/api.php?amount=3&category=18&difficulty=easy&type=multiple",
         dataType: "json",
-        success: function nextQuestion(data) {
-            $('.submit').on('click', function () {
-                console.log(data);
-                var searchValue = "Javascript";
-
-                let newAnswer = $("input").val();
-                let rightAnswer = data[''].answer;
-                console.log(rightAnswer);
-
-                if (newAnswer.toLowerCase() === rightAnswer.toLowerCase()) {
-                    $('h3').text("Correct!")
-                    $('input').val('');
-
-                } else {
-                    $('h3').text("Incorrect!");
-                }
-
-                var counter = 30;
-                var clock = setInterval(function () {
-                    $('h3').text(count + "" + "seconds(S)left")
-                    counter - 0;
-
-                    if (counter === 0) {
-                        stopInterval();
-                    }
-
-
-                }, 1000);
-
-                var stopInterval = function () {
-                    $('h3').text("Timed Out!")
-                    $('h3').text("Your Score is " + points + "points")
-                    $(".submit").hide();
-                    clearInterval(timer);
-                }
-
+        success: function () {
+        
+                
+                
 
                 // Intermediate Questions//
-
+    
                 $.ajax({
                     type: "GET",
                     url: "https://opentdb.com/api.php?amount=3&category=18&difficulty=medium&type=multiple",
                     dataType: "json",
-                    success: function nextQuestion(data) {
-                      
-                        $('.submit').on('click', function () {
-                            console.log(data);
-                            var searchValue = "Javascript";
-
-                            let newAnswer = $("input").val();
-                            let rightAnswer = data[''].answer;
-                            console.log(rightAnswer);
-
-                            if (newAnswer.toLowerCase() === rightAnswer.toLowerCase()) {
-                                $('h3').text("Correct!")
-                                $('input').val('');
-
-                            } else {
-                                $('h3').text("Incorrect!");
-                            }
-
-                            var counter = 30;
-                            var clock = setInterval(function () {
-                                $('h3').text(count + "" + "seconds(S)left")
-                                counter - 0;
-
-                                if (counter === 0) {
-                                    stopInterval();
-                                }
+                    success: function () {
+                        
 
 
-                            }, 1000);
-
-                            var stopInterval = function () {
-                                $('h3').text("Timed Out!")
-                                $('h3').text("Your Score is " + points + "points")
-                                $(".submit").hide();
-                                clearInterval(timer);
-                            }
 
                             // Expert Questions//
-
+                
                             $.ajax({
                                 type: "GET",
                                 url: "https://opentdb.com/api.php?amount=5&category=18&difficulty=hard&type=multiple",
                                 dataType: "json",
-                                success: function nextQuestion(data) {
-                                   
-                                    $('.submit').on('click', function () {
-                                        console.log(data);
-                                        var searchValue = "Javascript";
+                                success: function () {
+                                    
 
-                                        let newAnswer = $("input").val();
-                                        let rightAnswer = data[''].answer;
-                                        console.log(rightAnswer);
-
-                                        if (newAnswer.toLowerCase() === rightAnswer.toLowerCase()) {
-                                            $('h3').text("Correct!")
-                                            $('input').val('');
-
-                                        } else {
-                                            $('h3').text("Incorrect!");
-                                        }
-
-                                        var counter = 30;
-                                        var clock = setInterval(function () {
-                                            $('h3').text(count + "" + "seconds(S)left")
-                                            counter - 0;
-
-                                            if (counter === 0) {
-                                                stopInterval();
-                                            }
-
-
-                                        }, 1000);
-
-                                        var stopInterval = function () {
-                                            $('h3').text("Timed Out!")
-                                            $('h3').text("Your Score is " + points + "points")
-                                            $(".submit").hide();
-                                            clearInterval(timer);
-                                        }
+                        
 
                                         // Google Book Search API//
 
@@ -159,15 +64,15 @@ $(document).ready(function () {
                                             }
                                             return false;
                                         });
-                                    })
+                                    
                                 }
                             })
-                        })
+                        
                     }
 
 
                 })
-            })
+            
 
         }
 
