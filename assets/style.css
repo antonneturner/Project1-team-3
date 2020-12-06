@@ -69,7 +69,9 @@ img {
 	padding:15px;
 }
 button{
-	position:relative;
+  position:relative;
+  color: #0bb1c7;
+  top: 20%;
 	left:70px;
 }
 .aligning{
