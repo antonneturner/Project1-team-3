@@ -56,7 +56,7 @@ $(document).ready(function () {
 
                                                         url = response.items[i].volumeInfo.imageLinks.thumbnail;
                                                         img.attr('src', url);
-                                                        title.appendTo('#reults');
+                                                        title.appendTo('#results');
                                                         author.appendTo('#results');
                                                         img.appendTo('#results');
                                                     }

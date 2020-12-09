@@ -17,12 +17,12 @@ main {
   background: #fff;
 }
 
-img {
+.brand-logo {
     position: relative;
     width: 65px;
     height: 65px;
-    left: 15%;
-    padding: 5.5%;
+    left: 15px;
+    padding: 5.5px;
 }
 #header {
   position: absolute;
@@ -75,8 +75,15 @@ button{
 	left:70px;
 }
 .aligning{
-	margin-left:700px;
 	margin-top:20px;
+}
+
+img {
+  position: relative;
+  width: 150px;
+  height: auto;
+  left: 15%;
+  padding: 5px;
 }
 #imagebutton{
 	position:relative;
