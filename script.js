@@ -42,7 +42,8 @@
 //         var search = $("#books").val();
 //         if (search == "") {
 //             alert("Title search information required")
-//         } else {
+//         } 
+            // else {
 //             var url = "";
 //             var img = "";
 //             var title = "";
