@@ -42,7 +42,7 @@ To create a user friendly, multifunctional, and interactive LibGuide on how to p
 # Authors
 * Shannondale Page (student) <a href="https://github.com/sjohn214">Git Hub Profile</a>
 * Antonne Turnner (student) <a href="https://github.com/antonneturner">GitHub Profile</a>
-* Tamia Dixon (student) <a href="https://github.com/Timia154">GitHub Profile</a>
+* Mia Dixon (student) <a href="https://github.com/Timia154">GitHub Profile</a>
 * Julian Thompson (student)
 * Austin Bruch (Bootcamp Instructor)
 * Jon Jackson (Bootcamp TA Instructor)
